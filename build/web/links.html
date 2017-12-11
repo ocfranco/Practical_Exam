@@ -1,16 +1,131 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #bc59ff; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="sample.html">Sample Work</a></li>
+        <li><a href="links.html">Site Links </a></li>
+        <li><a href="info.html">Professional Info</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Orestes Franco</h3>
+  <img src="./me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="me" width="350" height="350">
+  <h4>Tippie College of Business - Information Systems</h4>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Homework Links</h3>
+  <p>Below you can find the links to each of my relevant assignments for the Software Design and Development course.</p>
+  <a href="sample.html" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Index
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin"></h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <h4>Homework 3: Salary Calculator</h4>
+    
+      <a href='http://f17-msci3300-09.azurewebsites.net/HW3/'> <img src="./salary.PNG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <p>This site is a salary calculator that takes into consideration different tax brackets with the information given. 
+            The main takeaway from this assignment was how java coding can be combined with HTML to make a dynamic web application.</p>
+    </div>
+    <div class="col-sm-3"> 
+      <h4>Homework 4: Database Read</h4>
+      <a href='http://f17-msci3300-09.azurewebsites.net/HW4/'><img src="./read.PNG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <p>This assignment required me to create a SQL database that could be called and read on a web site. This assignment introduced the concept of
+          creating servlets that could return information about an external database.</p>
+    </div>
+      <div class="col-sm-3"> 
+      <h4>Homework 5: Database Add & Delete</h4>
+      <a href='http://f17-msci3300-09.azurewebsites.net/HW5-1/'><img src="./add.PNG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <p>Building off of Homework 4, this one required me to include an "add" and "delete" function to the web site so that database entries could 
+           be added or deleted. Through this I learned how to manipulate java queries and servlets to complete the desired functions.</p>
+      </div>
+    <div class="col-sm-3"> 
+      <h4>Homework 6: DB Update & Search</h4>
+      <a href='http://f17-msci3300-09.azurewebsites.net/HW6/'><img src="./search.PNG" class="img-responsive margin" style="width:100%" alt="Image"></a>
+      <p>The final assignment added an "update" and "search" function to the web site. This assignment allowed me to refine my skills in manipulating
+          databases using javascript. It also improved my skills in web site design with CSS.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Orestes Franco, 2017</p> 
+</footer>
+
+</body>
 </html>
